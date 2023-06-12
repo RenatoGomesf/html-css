@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+    em HTML é "id"    = em CSS é "# (hashtag)" (só pode 1 por elemento)
+    em HTML é "class" = em CSS é ". (ponto)"   (pode em vários elementos)
+*/
+
+body {
+    background-color: rgb(141, 240, 179);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+#principal {
+    text-align: center;
+    background-color: rgb(2, 199, 11);
+    color: white;
+}
+
+h2 {
+    color: rgb(2, 199, 11);
+}
+
+.basico {
+    color: green;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avançado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(230, 230, 112, 0.404);
+}

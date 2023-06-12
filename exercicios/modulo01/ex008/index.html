@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>
+        Outras formatações
+    </h1>
+
+    <h2>
+        Código-fonte / Pré-formatação.
+    </h2>
+
+    <p>
+        O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.
+    </p>
+
+    <p>
+        A tag &lt;code&gt; deixa com a fonte monoespaçada (espaçamentos iguais).
+    </p>
+
+    <h3>
+        Sem tag &lt;pre&gt;
+    </h3>
+
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+           print(f'O número {num} é PAR')
+        else:
+           print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code>
+
+    <h3>
+        Cem tag &lt;pre&gt;
+    </h3>
+
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code>
+    </pre>
+
+    <p>
+        A tag &lt;pre&gt; considera todos os espaços, quebras de linhas e tabulações que estiverem dentro da tag.
+    </p>
+
+    <p>
+        Segurando a tecla <mark>Shift e apertando Tab</mark>, é possível <mark>remover o espaçamento da indentação dentro do html.</mark> Para por o espaçamento da indentação novamente, basta apertar a tecla Tab. Sem o Shift.
+    </p>
+
+    <h2>
+        Citações simples
+    </h2>
+
+    <p>
+        Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q>
+    </p>
+
+    <p>
+        A tag é &lt;q&gt;. Poe aspas na citação.
+    </p>
+
+    <h2>
+        Citações completas
+    </h2>
+
+    <p>
+        Segundo Maurício Samy Silva, no seu livro CSS3 e HTML5:
+    </p>
+
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        Fundamentos de HTML5 e CSS3 tem o objetivo de fornecer aos iniciantes e estudantes da área de desenvolvimento web conceitos básicos e fundamentos da marcação HTML e estilização CSS, para a criação de sites.
+    </blockquote>
+
+    <p>
+        A tag é &lt;blockquote&gt;. poe o texto de citação deslocado. <br> E <mark>colocando o parâmetro "cite"</mark> (citando) na tag, é possível por o link do local de extração da citação. assim os mecanismos de buscas e o google vão saber que essa citação está referenciando o link inserido.
+    </p>
+
+    <h2>
+        Abreviações
+    </h2>
+
+    <p>
+        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!
+    </p>
+
+    <p>
+        A tag é &lt;abbr&gt;. Pôe um popup na sigla desejada que mostra o que a sigla significa. 
+    </p>
+
+    <h2>
+        Texto invertido
+    </h2>
+
+    <p>
+        <bdo dir="rtl">Lana</bdo>
+    </p>
+
+    <p>
+        A tag é &lt;bdo&gt;.
+    </p>
+</body>
+</html>
