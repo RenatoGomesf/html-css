@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th { /*cabeçalho fixo. funciona melhor no chrome*/
+            position: sticky; /*colado/grudado*/
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) { /*pode usar odd(impar)(2n-1) ou even(par)(2n)*/
+            background-color: lightgrey;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+
+        TABLE (tag: table)
+            CAPTION (tag: caption) 'legenda/título'
+
+            THEAD (tag: thead)
+                tr, td, th
+
+            TBODY (tag: tbody)
+                tr, td, th
+
+            TFOOT (tag: tfoot)
+                tr, td, th
+    -->
+
+    <table>
+        <caption>População das unidades federativas</caption>
+
+        <thead>
+            <tr> <!--col = titulo da coluna-->
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td class="num">795 145</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 327 551</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">756 500</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 893 763</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 150 143</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 867 448</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 867 869</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 894 899</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 551 322</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 861 924</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 236 578</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 630 098</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 777 672</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th> <!--row = titulo da linha-->
+                <td class="num"><strong>79 610 912</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste sequi quisquam ratione. Cum accusamus pariatur tempora commodi unde amet ducimus, optio quam sed nemo. Nihil facere iusto aliquid eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni nulla exercitationem? Eaque fugiat, dolorem, enim officiis consectetur iste iure, dolore odio ut numquam nihil nostrum assumenda incidunt et minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore nulla dicta quas sit! Perspiciatis, optio quaerat. Atque, possimus repudiandae voluptatibus error perferendis, necessitatibus veritatis quis fugit odio fuga asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius fuga numquam quam. Ratione, repudiandae consectetur. Blanditiis cum mollitia ad, quidem nemo repudiandae. Accusantium, ullam laboriosam provident fugit doloribus distinctio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste sequi quisquam ratione. Cum accusamus pariatur tempora commodi unde amet ducimus, optio quam sed nemo. Nihil facere iusto aliquid eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni nulla exercitationem? Eaque fugiat, dolorem, enim officiis consectetur iste iure, dolore odio ut numquam nihil nostrum assumenda incidunt et minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore nulla dicta quas sit! Perspiciatis, optio quaerat. Atque, possimus repudiandae voluptatibus error perferendis, necessitatibus veritatis quis fugit odio fuga asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius fuga numquam quam. Ratione, repudiandae consectetur. Blanditiis cum mollitia ad, quidem nemo repudiandae. Accusantium, ullam laboriosam provident fugit doloribus distinctio.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste sequi quisquam ratione. Cum accusamus pariatur tempora commodi unde amet ducimus, optio quam sed nemo. Nihil facere iusto aliquid eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni nulla exercitationem? Eaque fugiat, dolorem, enim officiis consectetur iste iure, dolore odio ut numquam nihil nostrum assumenda incidunt et minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore nulla dicta quas sit! Perspiciatis, optio quaerat. Atque, possimus repudiandae voluptatibus error perferendis, necessitatibus veritatis quis fugit odio fuga asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius fuga numquam quam. Ratione, repudiandae consectetur. Blanditiis cum mollitia ad, quidem nemo repudiandae. Accusantium, ullam laboriosam provident fugit doloribus distinctio.</p>
+</body>
+</html>
