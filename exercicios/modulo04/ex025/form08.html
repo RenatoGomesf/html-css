@@ -8,7 +8,10 @@
 <body>
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get">
-        <!--o que está dentro de oninput é uma linha de programação-->
+        <!--
+            oninput: "quando eu entrar com dados"
+            o que está dentro de oninput é uma linha de programação
+        -->
         <div>
             <label for="in1">Número 1: </label>
             <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
@@ -18,7 +21,7 @@
             <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </div>
         <div>
-            <!--serve somente para mostrar coisas na tela-->
+            <!--output: "saída" serve somente para mostrar coisas na tela-->
             <label for="isoma">Soma: </label>
             <output name="Soma" id="isoma">0</output>
         </div>
