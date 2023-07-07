@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*VERSÃO Mobile First*/
+/* VERSÃO Mobile First */
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +22,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.815);
-    width: 90vw;
+    width: 400px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
